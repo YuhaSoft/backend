@@ -1,0 +1,8 @@
+-- AlterTable
+ALTER TABLE `user` MODIFY `createdAt` DATETIME(3) NULL DEFAULT CURRENT_TIMESTAMP(3),
+    MODIFY `updatedAt` DATETIME(3) NULL,
+    MODIFY `isActive` BOOLEAN NULL DEFAULT true,
+    MODIFY `email` VARCHAR(191) NULL,
+    MODIFY `username` VARCHAR(191) NULL,
+    MODIFY `password` VARCHAR(191) NULL,
+    MODIFY `isAdmin` BOOLEAN NULL DEFAULT false;
